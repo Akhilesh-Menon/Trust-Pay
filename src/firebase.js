@@ -3,12 +3,12 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBwd2oy4Nxxfn9d3Cax0OaRN0Ci8ifqCt0",
-  authDomain: "trustpay-877bf.firebaseapp.com",
-  projectId: "trustpay-877bf",
-  storageBucket: "trustpay-877bf.firebasestorage.app",
-  messagingSenderId: "623962033666",
-  appId: "1:623962033666:web:6b305339a264922a73211b"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
